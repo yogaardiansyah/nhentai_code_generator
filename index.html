@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuclear Code Generator</title>
+</head>
+<body>
+    <button onclick="ncode();">
+        Click This
+    </button>
+    <p>nhentai.net/g/<p id="magic">
+    
+    </p></p>
+
+</body>
+</html>
+
+<script>
+    var down = document.getElementById('magic');
+
+    function ncode() {
+        var minm = 000001;
+        var maxm = 999999;
+        down.innerHTML = Math.floor(Math
+        .random() * (maxm - minm + 1)) + minm;
+    }
+</script>
