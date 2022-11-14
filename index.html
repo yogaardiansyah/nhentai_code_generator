@@ -7,23 +7,18 @@
     <title>Nuclear Code Generator</title>
 </head>
 <body>
-    <button onclick="ncode();">
-        Click This
-    </button>
-    <p>nhentai.net/g/<p id="magic">
-    
-    </p></p>
-
+    <button onclick="ncode()">Klik</button>
+    <div>
+        <span id="magic"> </span>
+    </div>  
 </body>
 </html>
 
-<script>
-    var down = document.getElementById('magic');
-
+<script>   
     function ncode() {
         var minm = 000001;
-        var maxm = 999999;
-        down.innerHTML = Math.floor(Math
-        .random() * (maxm - minm + 1)) + minm;
+        var maxm = 999999; 
+        var ht = Math.floor(Math.random() * (maxm - minm + 1)) + minm; 
+        document.getElementById("magic").innerHTML = '<a href=http://nhentai.net/g/' + ht + '>Click This One</a>';
     }
 </script>
